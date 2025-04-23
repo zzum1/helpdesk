@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE `Ticket` MODIFY `status` ENUM('NEW', 'ANSWERED', 'DONE') NOT NULL DEFAULT 'NEW';

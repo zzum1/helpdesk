@@ -25,7 +25,7 @@ model Ticket {
     id              Int        @id @default(autoincrement())
     title           String
     description     String
-    status          Status
+    status          Status     @default(NEW)
     createdAt       DateTime   @default(now())
     updatedAt       DateTime   @default(now())
     user            User       @relation(fields: [userId], references: [id])
